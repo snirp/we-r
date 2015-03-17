@@ -11,6 +11,7 @@ def deploy():
         local("git add -A && git commit -m \"%s\"" % message)
         local("git push origin master")
         local("python freeze.py")
-        local ("cd %s" % freeze_folder)
-        local("git add -A && git commit -m \"%s\"" % message)
-        local("git push origin %s" % freeze_branch)
+        with cd(freeze_folder):
+            local("git branch %s" % freeze_branch)
+            local("git add -A && git commit -m \"%s\"" % message)
+            local("git push origin %s" % freeze_branch)
