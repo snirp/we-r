@@ -8,6 +8,7 @@
 
 [class*='col-'] {
 	float: left;
+    padding-right: 10px;
 }
 
 .grid {
@@ -164,6 +165,7 @@
 	[class*='col-'] {
 		width: auto;
 		float: none;
+        padding-right: 10px;
 	}
 
 
