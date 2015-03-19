@@ -2,16 +2,250 @@
 <html>
 <head>
 
-  <meta charset="utf-8">
-  <title>We-R</title>
-  <meta name="description" content="">
-  <link rel='stylesheet' href="static/css/main.css">
+    <meta charset="utf-8">
+    <title>We-R</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="static/css/simplegrid.css">
+    <link rel='stylesheet' href="static/css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(window).load(function (){
+        var distance = $("header").height();
+        var height = $("nav").height();
+        $(document).on("scroll",function(){
+            if($(document).scrollTop()>distance){
+                $("nav").addClass("stuck");
+                $("#nav-placeholder").height(height);
+            } else{
+                $("nav").removeClass("stuck");
+                $("#nav-placeholder").height(0);
+            }
+        });
+        });
+  </script>
 
 </head>
 <body>
   
-    <h1>Initial page</h1>
-    <p>My initial page.</p>
+<header>
+    <div id="contact-buttons">
+        <a href="tel:031633683832" title="telefonisch contact">
+            <i class="fa fa-phone fa-fw"></i>
+            <span class="hidden-sm">06 336 838 32</span>
+        </a>
+        <a href="mailto:info@we-r-consultants.nl" title="e-mail contact">
+            <i class="fa fa-envelope fa-fw"></i>
+            <span class="hidden-sm">info@we-r-consultants.nl</span>
+        </a>
+    </div>
+
+
+    <h1><span>Optimale en duurzame beheersing van uw vastgoedportefeuille.</span></h1>
+    <div id="logo-container">
+        <img src="static/images/logo_white.png">
+    </div>
+
+</header>
+<div id="nav-placeholder"></div>
+<nav id="sticky">
+    <img src="static/images/logo_white.png" id="menu-logo" height="46px">
+    <ul>
+        <li>
+            We-R Green
+        </li>
+        <li>
+            We-R Consultants
+        </li>
+    </ul>
+</nav>
+
+<main>
+
+    <article id="intro">
+        <h3>Wij zijn We-R Consultants</h3>
+        <p>
+            We-R Consultants is een consultancy bureau dat gelooft in waardevermeerdering door het
+            verbeteren van de relaties tussen organisaties, mensen, middelen en methoden.
+            Wij monitoren, analyseren en verbeteren processen en prestaties.
+        </p>
+        <p>
+            We hebben succesvol woningcorporaties, overheidsinstellingen en bouw- en onderhoudsbedrijven
+            geholpen hun missie, doelstellingen en jaarplannen te realiseren. Hierbij kunnen we bouwen op
+            een jarenlange ervaring in vastgoedbeheer.
+        </p>
+
+    </article>
+
+    <article id="diensten">
+        <h3>Wat wij doen</h3>
+        <p>
+            We-R Consultants heeft zich bewezen als een transparante, zorgvuldige en professionele partner,
+            gericht op het continu verbeteren van het professioneel beheer van onroerend goed.
+        </p>
+
+        <section id="productlijst">
+            <h4>Overzicht van diensten en producten</h4>
+            <ul>
+                <li><a href="#product-scan">Scan technisch beheer</a></li>
+                <li><a href="#product-voorraad">Strategisch voorraadbeleid</a></li>
+                <li><a href="#product-prestatie">Prestatiecontracten en Road-maps</a></li>
+                <li><a href="#product-interim">Interim- en procesmanagement</a></li>
+            </ul>
+        </section>
+
+        <section id="product-scan">
+            <h4>Scan technisch beheer (7s)</h4>
+            <blockquote>
+                Weet u hoe het is gesteld met de prestaties van het technisch beheer binnen
+                uw organisatie en in welke mate deze afwijkt ten opzichte van collega corporaties?
+            </blockquote>
+            <div class="grid grid-pad">
+                <div class="col-1-3 hidden-sm">
+                    <img src="static/images/illus_scan.png" class="product-img">
+                </div>
+                <div class="col-2-3">
+                    <p>
+                        Woningcorporaties geven veel geld uit aan het technisch beheer van hun bestaande voorraad.
+                        Gemiddeld wordt <a href="http://www.aedes.nl/content/artikelen/bedrijfsvoering/benchmarking/gedateerd/aedes-benchmark--7-3-voor-dienstverlening--bedrijf.xml" target=_blank>40% van de variabele kosten</a> besteed aan het onderhoud van de woningen.
+                        Daarnaast zijn de personeelslasten over de laatste vijf jaar met ca. <strong>20% toegenomen</strong>.
+                        Hierdoor, en mede door de economische omstandigheden van dit moment, is optimalisatie
+                        van het technisch beheer noodzakelijk geworden om als corporatie de komende tijd het hoofd
+                        boven water te houden.
+                    </p>
+                    <p>
+                        Gaat u voor kostenreductie en verbetering van de liquiditeit?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="product-voorraad">
+            <h4>Strategisch voorraadbeleid</h4>
+            <blockquote>
+                Sluit uw wensportefeuille aan op de huidige en toekomstige vraag naar sociale woningen?
+                Bestaat er een koppeling met de reguliere beheer- en onderhoudsprocessen?
+            </blockquote>
+            <p>
+                Kunt u één van deze vragen niet volmondig met ‘ja’ beantwoorden, dan is er wellicht sprake van
+                verspilling door onduidelijke afstemming van de doelstellingen. Het strategisch voorraadbeleid
+                biedt hierbij een kader voor ingrepen in uw woningbezit. Bijvoorbeeld door het uitwerken van
+                strategische uitgangspunten tot gebiedsvisies en complexbeheerplannen.
+            </p>
+            <p>
+                Heroverweging van het strategisch voorraadbeleid en afgeleide kaders voor de reguliere processen
+                kunnen leiden tot efficiëntere ingrepen.
+            </p>
+        </section>
+
+        <section id="product-prestatie">
+            <h4>Prestatiecontracten en Road-maps</h4>
+            <blockquote>
+                In hoeverre worden binnen uw organisatie de afgesproken prestaties gemonitord en
+                afgestemd op het totale perspectief?
+            </blockquote>
+            <p>
+                De laatste tijd worden steeds meer contracten afgesloten waarin prestatieafspraken
+                zijn vastgelegd. Maar hoe verhouden deze prestaties zich met bijv. de ambities uit het jaarplan
+                en welke resultaten hebben deze afspraken op het totale perspectief. Worden de juiste KPI’s
+                gemonitord en kunnen de monitoringgegevens worden gebruikt als sturingsmiddel?  Door het opzetten
+                van een zogenoemde Road-map worden al deze zaken met elkaar verbonden.
+            </p>
+            <p>
+                We-R Consultants geeft inzicht in de voortgang en effecten van uw ambities en prestatieafspraken.
+            </p>
+        </section>
+
+        <section id="product-interim">
+            <h4>Interim- en procesmanagement</h4>
+            <blockquote>
+                Zoekt u professionele ondersteuning bij het technisch beheer van vastgoed?
+            </blockquote>
+            <p>
+                De directie en medewerkers vormen tezamen de cultuur van een organisatie en uitstraling
+                naar buiten. Veel van de reguliere werkzaamheden liggen vast in: een ondernemingsplan, plannen
+                van aanpak, reglementen en procedures. Soms kan niet worden voorkomen dat er situaties ontstaan die
+                leiden tot capaciteitstekort of gemis aan kennis op een bepaald terrein.
+            </p>
+            <p>
+                Wij helpen u graag verder bij het ondersteunen en verbeteren van de functionaliteit van uw organisatie.
+            </p>
+        </section>
+    </article>
+
+    <article id="team">
+        <h3>Wij zijn het team</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim.
+        </p>
+
+        <section>
+            <h4>Riens van Dijk</h4>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim.</p>
+        </section>
+
+        <section>
+            <h4>Wiebe Kuiper</h4>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim.</p>
+        </section>
+    </article>
+
+
+    <article id="green">
+        <h3>We-R Green</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim.
+        </p>
+
+        <section>
+            <h4>dummy section</h4>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim.</p>
+        </section>
+
+        <section>
+            <h4>dummy section</h4>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim.</p>
+        </section>
+    </article>
+
+    <article id="info">
+        <h3>Algemene informatie</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim.
+        </p>
+    </article>
+
+</main>
+<footer>
+De footer met een formulier komt hier
+</footer>
 
 </body>
 </html>
